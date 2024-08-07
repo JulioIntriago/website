@@ -4,7 +4,6 @@ const Home = () => {
   return (
     <main className="pt-16">
       <section className="video-container relative h-screen">
-        {/* Contenedor del video con fondo */}
         <video
           className="background-video-hosted absolute w-full h-full object-cover"
           autoPlay
@@ -14,8 +13,8 @@ const Home = () => {
           src="/img/video.mp4" // Ruta al video en la carpeta img
         ></video>
         <div className="overlay-text absolute inset-0 flex flex-col justify-center items-center text-white text-center">
-          <h1 className="text-5xl font-bold mb-4">#1 ABA Therapy</h1>
-          <h2 className="text-3xl">Provider in Florida</h2>
+          <h1 className="text-6xl font-bold mb-5">The Best</h1>
+          <h2 className="text-5xl">Therapy Services</h2>
         </div>
       </section>
 
@@ -34,7 +33,7 @@ const Home = () => {
               </p>
               <div className="promo-buttons flex space-x-4">
                 <a href="#" className="btn btn-custom rounded-full px-4 py-2 flex items-center transition duration-300">
-                  <i className="bi bi-check-circle-fill mr-2"></i> START ABA THERAPY
+                  <i className="bi bi-check-circle-fill mr-2"></i> START BETTER BEHAVIOR THERAPY
                 </a>
                 <a href="#" className="btn btn-custom rounded-full px-4 py-2 flex items-center transition duration-300">
                   <i className="bi bi-play-btn-fill mr-2"></i> PLAY VIDEO

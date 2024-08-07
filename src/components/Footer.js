@@ -15,7 +15,7 @@ const Footer = () => {
         <div>
           <h3 className="font-bold mb-4 text-yellow-300">INFO</h3>
           <ul>
-            <li><a href="#" className="hover:underline">ABA Therapy Services</a></li>
+            <li><a href="#" className="hover:underline">Better Behavior Services </a></li>
             <li><a href="#" className="hover:underline">FAQs</a></li>
           </ul>
         </div>

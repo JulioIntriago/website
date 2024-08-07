@@ -1,27 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../img/logo2024.svg'; // Asegúrate de que esta ruta es correcta
+import logo from '../img/img7.PNG'; // Asegúrate de que esta ruta es correcta
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const navbar = document.getElementById('navbar');
       const contactHeader = document.querySelector('.contact-header');
-      const headerHeight = contactHeader.offsetHeight;
-
-      if (window.scrollY > headerHeight) {
-        contactHeader.style.top = `-${headerHeight}px`;
+      const contactHeaderHeight = contactHeader.offsetHeight;
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > contactHeaderHeight) {
+        contactHeader.classList.add('hidden-header');
         navbar.style.top = '0';
+        setShowNavbar(true);
       } else {
-        contactHeader.style.top = '0';
-        navbar.style.top = `${headerHeight}px`;
+        contactHeader.classList.remove('hidden-header');
+        navbar.style.top = `${contactHeaderHeight}px`;
+        setShowNavbar(false);
       }
     };
 
     window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -33,13 +34,13 @@ const Navbar = () => {
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center">
             <span className="mr-4">Follow Us</span>
-            <a href="https://www.facebook.com/tuperfil" target="_blank" rel="noopener noreferrer" className="text-white mx-2">
+            <a href="https://www.facebook.com/tuperfil" target="_blank" className="text-white mx-2">
               <i className="bi bi-facebook"></i>
             </a>
-            <a href="https://twitter.com/tuperfil" target="_blank" rel="noopener noreferrer" className="text-white mx-2">
+            <a href="https://twitter.com/tuperfil" target="_blank" className="text-white mx-2">
               <i className="bi bi-twitter"></i>
             </a>
-            <a href="https://www.linkedin.com/tuperfil" target="_blank" rel="noopener noreferrer" className="text-white mx-2">
+            <a href="https://www.linkedin.com/tuperfil" target="_blank" className="text-white mx-2">
               <i className="bi bi-linkedin"></i>
             </a>
           </div>
@@ -48,7 +49,10 @@ const Navbar = () => {
           </div>
         </div>
       </header>
-      <nav id="navbar" className="bg-white shadow w-full z-10 transition-top duration-300">
+      <nav
+        id="navbar"
+        className={`bg-white shadow fixed w-full z-10 transition-top duration-300 ${showNavbar ? 'top-0' : 'top-50'}`}
+      >
         <div className="container mx-auto px-4 flex justify-between items-center">
           <Link to="/" className="flex items-center">
             <img width="80" height="80" src={logo} className="custom-logo" alt="BETTER BEHAVIOR SERVICES" decoding="async" />
@@ -69,7 +73,7 @@ const Navbar = () => {
               <li><Link to="/our-process" className="text-dark hover:text-teal-500">OUR PROCESS</Link></li>
               <li><Link to="/contact" className="text-dark hover:text-teal-500">CONTACT</Link></li>
             </ul>
-            <Link to="/contact" className="ml-4 px-4 py-2 bg-pink-500 text-white rounded-full flex items-center hover:bg-teal-500 transition duration-300">
+            <Link to="/contact" className="ml-4 px-4 py-2 bg-highlight text-white rounded-full flex items-center hover:bg-teal transition duration-300">
               <i className="bi bi-check-circle-fill mr-2"></i>
               FREE CONSULTATION
             </Link>

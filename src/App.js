@@ -11,6 +11,8 @@ import Contact from './pages/Contact';  // Ajusta la ruta según tu estructura d
 import 'aos/dist/aos.css'; // Importar los estilos de AOS
 import AOS from 'aos'; // Importar AOS
 import './App.css'; // Asegúrate de que la ruta es correcta
+import WhatIsBetter from './components/WhatIsBetter'; // Ajusta la ruta según tu estructura de carpetas
+
 
 function App() {
   useEffect(() => {

@@ -1,13 +1,238 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
 
+/* Estilos personalizados */
 .contact-header {
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 20;
   background-color: #5AB1B7;
+  color: #ffffff;
+  transition: top 0.3s;
+}
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  top: 50px; /* Ajusta para la altura inicial */
+  z-index: 10;
+  transition: top 0.3s;
+}
+
+.hidden-header {
+  top: -50px; /* Ajusta para ocultar el header */
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 50px); /* Ajusta para que el video cubra la pantalla completa menos el espacio del header */
+  overflow: hidden;
+}
+
+.background-video-hosted {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #B3E7CC;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  z-index: 2;
+}
+
+/* Otros estilos personalizados */
+.promo-section {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  margin-top: 20px;
+}
+
+.promo-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.promo-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.promo-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #B3E7CC;
+}
+
+.promo-text {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.promo-buttons .btn {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background-color: #5AB1B7;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: #5AB1B7;
+  border: 1px solid #B3E7CC;
+}
+
+.btn-highlight {
+  background-color: #fcfaf7;
+  color: rgb(12, 12, 12);
+}
+
+.btn-highlight:hover {
+  background-color: white;
+  color: #5AB1B7;
+  border: 1px solid #B3E7CC;
+}
+
+.text-subtittle {
+  color: #5AB1B7;
+  font-weight: 800;
+}
+
+footer {
+  background-color: #5AB1B7;
+  color: #fff;
+}
+
+footer h3 {
+  color: #F9D585;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+footer form {
+  display: flex;
+  margin-top: 10px;
+}
+
+footer input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 50px 0 0 50px;
+  outline: none;
+  flex: 1;
+}
+
+footer button[type="submit"] {
+  padding: 10px;
+  border: none;
+  background-color: #FFA3A3;
+  color: #fff;
+  border-radius: 0 50px 50px 0;
+  cursor: pointer;
+}
+
+footer button[type="submit"]:hover {
+  background-color: #F9D585;
+}
+
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  footer .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  footer .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+footer .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .space-x-4 > * + * {
+  margin-left: 1rem;
+}
+
+footer .border-t {
+  border-top-width: 1px;
+  border-color: #8A4B6F;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+.contact-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 20;
+  background-color: #5AB1B7; /* Ajusta según tu paleta */
   color: #ffffff;
   transition: top 0.3s;
 }
@@ -23,330 +248,52 @@
 }
 
 .pt-32 {
-  padding-top: 8rem; /* Ajuste de padding top para evitar superposición */
-}
-
-.mt-16 {
-  margin-top: 4rem; /* Ajuste de margin top para el componente ContactInfo */
-}
-
-.bg-gray-200 {
-  background-color: #E5E7EB; /* Asegura el color de fondo correcto para ContactInfo */
-}
-
-
-.video-container {
-  position: relative; /* Relativo para contener el video */
-  width: 100%; /* Abarca todo el ancho */
-  height: calc(100vh - 100px); /* Altura de la sección del video, ajustada para no ser cubierta por el navbar */
-  overflow: hidden; /* Oculta el desbordamiento */
-  z-index: 5; /* Asegúrate de que esté por encima del navbar */
-  margin-top: 50px; /* Ajusta el margen superior para que no se cubra */
-}
-
-.background-video-hosted {
-  position: absolute; /* Posición absoluta dentro del contenedor */
-  top: 50%; /* Centra el video verticalmente */
-  left: 50%; /* Centra el video horizontalmente */
-  width: 100%; /* Abarca todo el ancho */
-  height: 100%; /* Abarca toda la altura */
-  object-fit: cover; /* Ajusta el video para cubrir todo el contenedor */
-  transform: translate(-50%, -50%); /* Centra el video */
-  z-index: 1; /* Superposición debajo del texto */
-}
-
-.overlay-text {
-  position: absolute; /* Posición absoluta dentro del contenedor */
-  top: 50%; /* Centra el texto verticalmente */
-  left: 50%; /* Centra el texto horizontalmente */
-  transform: translate(-50%, -50%); /* Centra el texto */
-  color: #B3E7CC; /* Color del texto */
-  font-size: 3em; /* Tamaño de la fuente */
-  font-weight: bold; /* Negrita */
-  text-align: center; /* Centra el texto */
-  z-index: 2; /* Superposición sobre el video */
-}
-
-.promo-section {
-  position: relative; /* Relativo para contener la promo */
-  width: 100%; /* Abarca todo el ancho */
-  height: 450px; /* Altura de la sección de promo */
-  margin-top: 20px; /* Margen superior */
-}
-
-.promo-container {
-  position: relative; /* Relativo para contener la promo */
-  width: 100%; /* Abarca todo el ancho */
-  height: 100%; /* Abarca toda la altura */
-  overflow: hidden; /* Oculta el desbordamiento */
-}
-
-.promo-overlay {
-  position: absolute; /* Posición absoluta dentro del contenedor */
-  top: 0; /* Posición en la parte superior */
-  left: 0; /* Posición en la parte izquierda */
-  width: 100%; /* Abarca todo el ancho */
-  height: 100%; /* Abarca toda la altura */
-  background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
-  display: flex; /* Flexbox para centrar el contenido */
-  flex-direction: column; /* Dirección del flexbox */
-  justify-content: center; /* Centra el contenido verticalmente */
-  align-items: center; /* Centra el contenido horizontalmente */
-  text-align: center; /* Centra el texto */
-  color: white; /* Color del texto */
-  padding: 20px; /* Relleno */
-}
-
-.promo-title {
-  font-size: 2.5em; /* Tamaño de la fuente */
-  font-weight: bold; /* Negrita */
-  margin-bottom: 20px; /* Margen inferior */
-  color: #B3E7CC; /* Color del título */
-}
-
-.promo-text {
-  font-size: 1.2em; /* Tamaño de la fuente */
-  font-weight: bold; /* Negrita */
-  margin-bottom: 30px; /* Margen inferior */
-  max-width: 600px; /* Ancho máximo */
-}
-
-.promo-buttons .btn {
-  margin: 0 10px; /* Márgenes horizontales */
-  padding: 10px 20px; /* Relleno */
-  border-radius: 5px; /* Bordes redondeados */
-  font-size: 1em; /* Tamaño de la fuente */
-  font-weight: bold; /* Negrita */
-  text-transform: uppercase; /* Texto en mayúsculas */
-}
-
-.btn-primary {
-  background-color: #5AB1B7; /* Color de fondo */
-  color: white; /* Color del texto */
-}
-
-.btn-primary:hover {
-  background-color: white; /* Color de fondo al pasar el ratón */
-  color: #5AB1B7; /* Color del texto al pasar el ratón */
-  border: 1px solid #B3E7CC; /* Borde al pasar el ratón */
-}
-
-.btn-highlight {
-  background-color: #fcfaf7; /* Color de fondo */
-  color: rgb(12, 12, 12); /* Color del texto */
-}
-
-.btn-highlight:hover {
-  background-color: white; /* Color de fondo al pasar el ratón */
-  color: #5AB1B7; /* Color del texto al pasar el ratón */
-  border: 1px solid #B3E7CC; /* Borde al pasar el ratón */
-}
-
-.text-subtittle {
-  color: #5AB1B7; /* Color del subtítulo */
-  font-weight: 800; /* Negrita */
-}
-
-footer {
-  background-color: #5AB1B7; /* Color de fondo */
-  color: #fff; /* Color del texto */
-}
-
-footer h3 {
-  color: #F9D585; /* Color de los títulos de las secciones */
-}
-
-footer ul {
-  list-style: none; /* Sin estilo de lista */
-  padding: 0; /* Sin relleno */
-}
-
-footer ul li {
-  margin-bottom: 10px; /* Margen inferior */
-}
-
-footer ul li a {
-  color: #fff; /* Color del texto */
-  text-decoration: none; /* Sin subrayado */
-}
-
-footer ul li a:hover {
-  text-decoration: underline; /* Subrayado al pasar el ratón */
-}
-
-footer form {
-  display: flex; /* Flexbox para el formulario */
-  margin-top: 10px; /* Margen superior */
-}
-
-footer input[type="email"] {
-  padding: 10px; /* Relleno */
-  border: none; /* Sin borde */
-  border-radius: 50px 0 0 50px; /* Bordes redondeados */
-  outline: none; /* Sin contorno */
-  flex: 1; /* Ocupa todo el espacio disponible */
-}
-
-footer button[type="submit"] {
-  padding: 10px; /* Relleno */
-  border: none; /* Sin borde */
-  background-color: #FFA3A3; /* Color de fondo */
-  color: #fff; /* Color del texto */
-  border-radius: 0 50px 50px 0; /* Bordes redondeados */
-  cursor: pointer; /* Cursor de puntero */
-}
-
-footer button[type="submit"]:hover {
-  background-color: #F9D585; /* Color de fondo al pasar el ratón */
-}
-
-footer .container {
-  display: grid; /* Grid para el contenedor */
-  grid-template-columns: repeat(1, 1fr); /* Una columna */
-  gap: 20px; /* Espacio entre columnas */
-}
-
-@media (min-width: 768px) {
-  footer .container {
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
-  }
-}
-
-@media (min-width: 1024px) {
-  footer .container {
-    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en pantallas grandes */
-  }
-}
-
-footer .flex {
-  display: flex; /* Flexbox para el pie de página */
-  justify-content: space-between; /* Espacio entre los elementos */
-}
-
-footer .space-x-4 > * + * {
-  margin-left: 1rem; /* Margen izquierdo */
-}
-
-footer .border-t {
-  border-top-width: 1px; /* Ancho del borde superior */
-  border-color: #8A4B6F; /* Color del borde */
-}
-
-/* Estilos adicionales */
-.h-64 {
-  height: 16rem;
+  padding-top: 8rem;
 }
 
 .mt-16 {
   margin-top: 4rem;
 }
 
-nav {
-  margin-bottom: 32px; /* Ajusta este valor según sea necesario */
+.bg-gray-200 {
+  background-color: #E5E7EB;
 }
 
-/* ContactForm.module.css */
-.formContainer {
-  background-color: #ecf0f1;
-  padding: 2rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+.text-primary {
+  color: #5AB1B7; /* Ajusta según tu paleta */
 }
 
-.title {
-  color: #3498db;
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.input {
-  border: 1px solid #bdc3c7;
-  border-radius: 0.25rem;
-  padding: 0.5rem;
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-.button {
-  background-color: #e74c3c;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 0.25rem;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: #c0392b;
-}
-
-/* En tu archivo de estilos o configuración de Tailwind CSS */
-.text-blue-500 {
-  color: #3B82F6; /* O el color que prefieras */
+.text-secondary {
+  color: #333333; /* Ajusta según tu paleta */
 }
 
 .shadow-md {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.bg-gray-200 {
-  background-color: #E5E7EB;
-}
-/* Estilos adicionales */
-.text-center {
-  text-align: center;
+/* Botones personalizados */
+.bg-highlight {
+  background-color: #FFA3A3; /* Ajusta según tu paleta */
 }
 
-.font-semibold {
-  font-weight: 600;
+.bg-teal-500 {
+  background-color: #5AB1B7; /* Ajusta según tu paleta */
 }
 
-.font-bold {
-  font-weight: 700;
+.bg-teal-600 {
+  background-color: #4a999c; /* Ajusta según tu paleta */
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
+.text-dark {
+  color: #333333; /* Ajusta según tu paleta */
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
+.hover\:bg-teal-500:hover {
+  background-color: #5AB1B7; /* Ajusta según tu paleta */
 }
 
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.pt-32 {
-  padding-top: 8rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
-}
-/* Estilos adicionales */
-.text-center {
-  text-align: center;
-}
-
-.font-extrabold {
-  font-weight: 800;
-}
-
-.text-primary {
-  color: #5AB1B7; /* Ajusta este color a tu paleta */
-}
-
-.text-secondary {
-  color: #333333; /* Ajusta este color a tu paleta */
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem; /* Reduce el margen inferior */
+.hover\:text-teal-500:hover {
+  color: #5AB1B7; /* Ajusta según tu paleta */
 }
 
 .container {
@@ -355,16 +302,4 @@ nav {
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.pt-32 {
-  padding-top: 8rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem; /* Reduce el margen superior del formulario */
 }
