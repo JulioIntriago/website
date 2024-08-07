@@ -37,6 +37,7 @@ const SchoolBased = () => {
       <p className="text-4xl font-bold text-primary mb-2 text-center">Please fill out the necessary form and a member of our Intake Team will contact you.
       Thank you.</p>
       <ContactForm />
+    <br></br>
       <Footer /> {/* Añadir el Footer aquí */}
 
     </main>
