@@ -22,7 +22,8 @@ const Footer = () => {
         <div>
           <h3 className="font-bold mb-4 text-yellow-300">OUR LOCATIONS</h3>
           <ul>
-            <li><a href="#" className="hover:underline">West Palm Beach</a></li>
+            <li><a href="#" className="hover:underline">3625 NW 82nd Ave Suite 100-J 
+            Doral FL, 33166</a></li>
           </ul>
         </div>
         <div>

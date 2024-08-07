@@ -4,6 +4,7 @@ import ContactForm from '../components/ContactForm'; // Asegúrate de que esta r
 import WhatWeDoSection from '../components/WhatWeDoSection'; // Asegúrate de que esta ruta sea correcta
 import DisordersSection from '../components/DisordersSection'; // Asegúrate de que esta ruta sea correcta
 import BenefitsSection from '../components/BenefitsSection'; // Asegúrate de que esta ruta sea correcta
+import ConvenienceSection from '../components/ConvenienceSection'; // Asegúrate de que esta ruta sea correcta
 
 const HomeBased = () => {
   return (
@@ -18,15 +19,15 @@ const HomeBased = () => {
           src="/img/video.mp4" // Ruta al video en la carpeta img
         ></video>
         <div className="overlay-text absolute inset-0 flex flex-col justify-center items-center text-white text-center">
-          <h1 className="text-6xl font-bold mb-5 text-primary">The Best</h1>
-          <h2 className="text-5xl text-primary">Therapy Services</h2>
+          {/* Puedes agregar aquí cualquier texto superpuesto al video */}
         </div>
       </section>
 
       <BenefitsSection />
-
+      <ConvenienceSection />
       <WhatWeDoSection />
       <DisordersSection />
+
       <section className="contact-form-section py-8 px-4" data-aos="fade-up">
         <div className="container mx-auto">
           <h2 className="text-2xl font-bold mb-4 text-center">
