@@ -17,19 +17,19 @@
 #navbar {
   position: fixed;
   width: 100%;
-  top: 50px; /* Ajusta para la altura inicial */
+  top: 50px;
   z-index: 10;
   transition: top 0.3s;
 }
 
 .hidden-header {
-  top: -50px; /* Ajusta para ocultar el header */
+  top: -50px;
 }
 
 .video-container {
   position: relative;
   width: 100%;
-  height: calc(100vh - 50px); /* Ajusta para que el video cubra la pantalla completa menos el espacio del header */
+  height: calc(100vh - 50px);
   overflow: hidden;
 }
 
@@ -56,7 +56,6 @@
   z-index: 2;
 }
 
-/* Otros estilos personalizados */
 .promo-section {
   position: relative;
   width: 100%;
@@ -110,196 +109,61 @@
   text-transform: uppercase;
 }
 
-.btn-primary {
+.btn-custom {
   background-color: #5AB1B7;
   color: white;
 }
 
-.btn-primary:hover {
+.btn-custom:hover {
   background-color: white;
   color: #5AB1B7;
   border: 1px solid #B3E7CC;
-}
-
-.btn-highlight {
-  background-color: #fcfaf7;
-  color: rgb(12, 12, 12);
-}
-
-.btn-highlight:hover {
-  background-color: white;
-  color: #5AB1B7;
-  border: 1px solid #B3E7CC;
-}
-
-.text-subtittle {
-  color: #5AB1B7;
-  font-weight: 800;
-}
-
-footer {
-  background-color: #5AB1B7;
-  color: #fff;
-}
-
-footer h3 {
-  color: #F9D585;
-}
-
-footer ul {
-  list-style: none;
-  padding: 0;
-}
-
-footer ul li {
-  margin-bottom: 10px;
-}
-
-footer ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-footer ul li a:hover {
-  text-decoration: underline;
-}
-
-footer form {
-  display: flex;
-  margin-top: 10px;
-}
-
-footer input[type="email"] {
-  padding: 10px;
-  border: none;
-  border-radius: 50px 0 0 50px;
-  outline: none;
-  flex: 1;
-}
-
-footer button[type="submit"] {
-  padding: 10px;
-  border: none;
-  background-color: #FFA3A3;
-  color: #fff;
-  border-radius: 0 50px 50px 0;
-  cursor: pointer;
-}
-
-footer button[type="submit"]:hover {
-  background-color: #F9D585;
-}
-
-footer .container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 20px;
-}
-
-@media (min-width: 768px) {
-  footer .container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  footer .container {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-footer .flex {
-  display: flex;
-  justify-content: space-between;
-}
-
-footer .space-x-4 > * + * {
-  margin-left: 1rem;
-}
-
-footer .border-t {
-  border-top-width: 1px;
-  border-color: #8A4B6F;
-}
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@import '~@fortawesome/fontawesome-free/css/all.min.css';
-
-.contact-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 20;
-  background-color: #5AB1B7; /* Ajusta según tu paleta */
-  color: #ffffff;
-  transition: top 0.3s;
-}
-
-#navbar {
-  position: fixed;
-  width: 100%;
-  top: 50px;
-  z-index: 10;
-  transition: top 0.3s;
-  margin: 0;
-  padding: 0;
-}
-
-.pt-32 {
-  padding-top: 8rem;
-}
-
-.mt-16 {
-  margin-top: 4rem;
-}
-
-.bg-gray-200 {
-  background-color: #E5E7EB;
 }
 
 .text-primary {
-  color: #5AB1B7; /* Ajusta según tu paleta */
+  color: #5AB1B7;
 }
 
 .text-secondary {
-  color: #333333; /* Ajusta según tu paleta */
+  color: #333333;
 }
 
-.shadow-md {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Botones personalizados */
 .bg-highlight {
-  background-color: #FFA3A3; /* Ajusta según tu paleta */
+  background-color: #FFA3A3;
 }
 
-.bg-teal-500 {
-  background-color: #5AB1B7; /* Ajusta según tu paleta */
-}
-
-.bg-teal-600 {
-  background-color: #4a999c; /* Ajusta según tu paleta */
+.bg-teal-500:hover {
+  background-color: #4a999c;
 }
 
 .text-dark {
-  color: #333333; /* Ajusta según tu paleta */
+  color: #333333;
 }
 
-.hover\:bg-teal-500:hover {
-  background-color: #5AB1B7; /* Ajusta según tu paleta */
+/* Estilos para la sección "Why Choose" */
+.why-choose-section {
+  padding: 4rem 1rem;
 }
 
-.hover\:text-teal-500:hover {
-  color: #5AB1B7; /* Ajusta según tu paleta */
+.why-choose-section img {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+/* Asegúrate de que las imágenes tengan la misma altura */
+.image-container {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 70%; /* Aspect ratio 4:3 */
+  height: 0;
 }
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
