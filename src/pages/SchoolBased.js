@@ -1,27 +1,14 @@
 import React from 'react';
 import '../styles.css'; // Asegúrate de que esta ruta sea correcta
-import ContactForm from '../components/ContactForm'; // Asegúrate de que esta ruta sea correcta
-import WhatWeDoSection from '../components/WhatWeDoSection'; // Asegúrate de que esta ruta sea correcta
-import DisordersSection from '../components/DisordersSection'; // Asegúrate de que esta ruta sea correcta
-import PairingSection from '../components/PairingSection'; // Asegúrate de que esta ruta sea correcta
+import ContactForm from '../components/ContactForm';
+import WhatWeDoSection from '../components/WhatWeDoSection';
+import DisordersSection from '../components/DisordersSection';
+import PairingSection from '../components/PairingSection';
 
 const SchoolBased = () => {
   return (
     <main className="pt-16">
-       <section className="video-container relative h-screen">
-        <video
-          className="background-video-hosted absolute w-full h-full object-cover"
-          autoPlay
-          muted
-          playsInline
-          loop
-          src="/img/img24.PNG" // Ruta al video en la carpeta img
-        ></video>
-        <div className="overlay-text absolute inset-0 flex flex-col justify-center items-center text-white text-center">
-          <h1 className="text-6xl font-bold mb-5 text-primary">The Best</h1>
-          <h2 className="text-5xl text-primary">Therapy Services</h2>
-        </div>
-      </section>
+     
       <section className="school-based-aba py-8 px-4">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-bold mb-8">School Based ABA Therapy</h2>
@@ -45,8 +32,7 @@ const SchoolBased = () => {
       </section>
 
       <PairingSection />
-
-      
+      <ContactForm />
     </main>
   );
 };
