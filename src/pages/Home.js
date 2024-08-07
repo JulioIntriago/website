@@ -72,7 +72,7 @@ const Home = () => {
           </div>
           <div className="w-full lg:w-1/2 p-4">
             <img
-              src="/img/img12.PNG" // Ajusta la ruta a la imagen que has proporcionado
+              src="/img/img13.PNG" // Ajusta la ruta a la imagen que has proporcionado
               alt="Who We Are"
               className="w-full h-auto rounded-lg shadow-md"
             />
