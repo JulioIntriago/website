@@ -14,7 +14,7 @@ const PairingSection = () => {
         </div>
         <div className="md:w-1/2 p-4">
           <h2 className="text-4xl font-bold text-primary mb-4">PAIRING</h2>
-          <p className="text-secondary mb-8">
+          <p className="text-dark mb-8">
             Pairing is an essential aspect of our school-based ABA therapy, as it helps build a positive and trusting relationship between the child and ABA therapist. Through the process of pairing, your child’s therapist strives to establish themselves as a reliable and enjoyable presence at school. This involves engaging in conversation and activities that the child finds reinforcing. Pairing not only enhances your child’s engagement and cooperation, but also lays the foundation for effective teaching and intervention.
           </p>
         </div>

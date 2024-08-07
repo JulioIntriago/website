@@ -15,13 +15,13 @@ const BenefitsSection = () => {
           </div>
           <div className="w-full lg:w-1/2 p-4 text-center lg:text-left" data-aos="fade-left">
           <h3 className="text-2xl font-bold text-primary mb-4">Familiar Environment</h3>
-          <p className="text-secondary mb-4">
+          <p className="text-dark mb-4">
               Perhaps the most valuable part of home-based ABA therapy is how comfortable your child will be with autism treatment right from the get-go. While we ensure your child is perfectly comfortable and secure in our center, there’s nothing like being in the comfort of your own home.
             </p>
-            <p className="text-secondary mb-4">
+            <p className="text-dark mb-4">
               Because your child is in their natural environment at home, their BCBA can observe their behavior and get a good feel for how their typical day goes. And because your child gets to meet with their therapist or our team members in a comfortable and safe space, they may be more apt to cooperate quickly.
             </p>
-            <p className="text-secondary mb-4">
+            <p className="text-dark mb-4">
               Home-based ABA therapy also eliminates distraction and any need to adapt to a new space.
             </p>
           </div>

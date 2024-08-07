@@ -9,6 +9,7 @@ import PairingSection from '../components/PairingSection';
 import Individualize from '../components/Individualize';
 import SkillAcquisition from '../components/SkillAcquisition';
 import NaturalEnvironmentTeaching from '../components/NaturalEnvironmentTeaching';
+import Footer from '../components/Footer'; // Asegúrate de importar el Footer
 
 const HomeBased = () => {
   return (
@@ -44,6 +45,8 @@ const HomeBased = () => {
           <ContactForm />
         </div>
       </section>
+      <Footer /> {/* Añadir el Footer aquí */}
+
     </main>
   );
 };
