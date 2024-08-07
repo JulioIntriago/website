@@ -4,6 +4,7 @@ import ContactForm from '../components/ContactForm';
 import WhatWeDoSection from '../components/WhatWeDoSection';
 import DisordersSection from '../components/DisordersSection';
 import PairingSection from '../components/PairingSection';
+import Footer from '../components/Footer'; // Asegúrate de importar el Footer
 
 const SchoolBased = () => {
   return (
@@ -36,6 +37,8 @@ const SchoolBased = () => {
       <p className="text-4xl font-bold text-primary mb-2 text-center">Please fill out the necessary form and a member of our Intake Team will contact you.
       Thank you.</p>
       <ContactForm />
+      <Footer /> {/* Añadir el Footer aquí */}
+
     </main>
   );
 };
