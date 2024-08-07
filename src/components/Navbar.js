@@ -67,11 +67,11 @@ const Navbar = () => {
           </button>
           <div className={`flex-1 justify-center lg:flex ${isOpen ? 'block' : 'hidden'}`}>
             <ul className="flex flex-col lg:flex-row lg:space-x-6">
-              <li><Link to="/home-based" className="text-dark hover:text-teal-500">HOME BASED</Link></li>
-              <li><Link to="/school-based" className="text-dark hover:text-teal-500">SCHOOL BASED</Link></li>
-              <li><Link to="/parent-training" className="text-dark hover:text-teal-500">PARENT TRAINING</Link></li>
-              <li><Link to="/our-process" className="text-dark hover:text-teal-500">OUR PROCESS</Link></li>
-              <li><Link to="/contact" className="text-dark hover:text-teal-500">CONTACT</Link></li>
+              <li><Link to="/home-based" className="text-dark hover:text-teal-500 hover:underline">HOME BASED</Link></li>
+              <li><Link to="/school-based" className="text-dark hover:text-teal-500 hover:underline">SCHOOL BASED</Link></li>
+              <li><Link to="/parent-training" className="text-dark hover:text-teal-500 hover:underline">PARENT TRAINING</Link></li>
+              <li><Link to="/our-process" className="text-dark hover:text-teal-500 hover:underline">OUR PROCESS</Link></li>
+              <li><Link to="/contact" className="text-dark hover:text-teal-500 hover:underline">CONTACT</Link></li>
             </ul>
             <Link to="/contact" className="ml-4 px-4 py-2 bg-highlight text-white rounded-full flex items-center hover:bg-teal transition duration-300">
               <i className="bi bi-check-circle-fill mr-2"></i>
