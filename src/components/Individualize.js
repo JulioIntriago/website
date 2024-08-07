@@ -2,12 +2,19 @@
 
 import React from 'react';
 import '../styles.css'; // Asegúrate de que este archivo CSS existe y contiene los estilos necesarios
-import image from '../img/individualize.png'; // Ajusta la ruta de la imagen
+import image from '../img/atention.PNG'; // Ajusta la ruta de la imagen
 
 const Individualize = () => {
     return (
         <section className="individualize-section py-8 px-4" data-aos="fade-up">
             <div className="container mx-auto flex flex-wrap">
+                <div className="w-full md:w-1/2 px-4 flex items-center justify-center">
+                    <img
+                        src={image}
+                        alt="Individualized Attention"
+                        className="rounded shadow-lg max-w-full h-auto"
+                    />
+                </div>
                 <div className="w-full md:w-1/2 px-4">
                     <h2 className="text-2xl font-bold mb-4 text-center md:text-left">Individualized Attention</h2>
                     <p className="mb-4">
@@ -21,13 +28,6 @@ const Individualize = () => {
                         address problem behaviors, like tantrums, by utilizing evidence-based strategies to identify the
                         underlying causes and implement effective coping skills.
                     </p>
-                </div>
-                <div className="w-full md:w-1/2 px-4 flex items-center justify-center">
-                    <img
-                        src={image}
-                        alt="Individualized Attention"
-                        className="rounded shadow-lg max-w-full h-auto"
-                    />
                 </div>
             </div>
         </section>
