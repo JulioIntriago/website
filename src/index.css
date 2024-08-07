@@ -167,3 +167,61 @@
   object-fit: cover;
 }
 
+/* Añade esto a tu archivo CSS */
+/* Añade esto a tu archivo CSS */
+nav {
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  transition: top 0.3s;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  height: 3rem;
+  margin-right: 0.75rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #319795; /* Cambia esto al color que prefieras para el hover */
+  text-decoration: underline;
+}
+
+nav .hidden {
+  display: none;
+}
+
+nav .bg-pink-500 {
+  background-color: #ed64a6;
+}
+
+nav .hover\:bg-pink-600:hover {
+  background-color: #d53f8c;
+}
+
+/* Responsivo */
+@media (min-width: 768px) {
+  nav .hidden {
+    display: flex;
+  }
+}

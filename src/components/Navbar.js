@@ -55,7 +55,8 @@ const Navbar = () => {
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
           <Link to="/" className="flex items-center">
-            <img width="80" height="80" src={logo} className="custom-logo" alt="BETTER BEHAVIOR SERVICES" decoding="async" />
+            <img width="50" height="50" src={logo} className="custom-logo" alt="BETTER BEHAVIOR SERVICES" decoding="async" />
+            <span className="ml-2 text-lg font-bold text-primary">BETTER BEHAVIOR SERVICES LLC</span>
           </Link>
           <button
             className="text-gray-500 focus:outline-none lg:hidden"
@@ -67,13 +68,13 @@ const Navbar = () => {
           </button>
           <div className={`flex-1 justify-center lg:flex ${isOpen ? 'block' : 'hidden'}`}>
             <ul className="flex flex-col lg:flex-row lg:space-x-6">
-              <li><Link to="/home-based" className="text-dark hover:text-teal-500 hover:underline">HOME BASED</Link></li>
-              <li><Link to="/school-based" className="text-dark hover:text-teal-500 hover:underline">SCHOOL BASED</Link></li>
-              <li><Link to="/parent-training" className="text-dark hover:text-teal-500 hover:underline">PARENT TRAINING</Link></li>
-              <li><Link to="/our-process" className="text-dark hover:text-teal-500 hover:underline">OUR PROCESS</Link></li>
-              <li><Link to="/contact" className="text-dark hover:text-teal-500 hover:underline">CONTACT</Link></li>
+              <li><Link to="/home-based" className="text-dark text-lg hover:text-teal-500 hover:underline">HOME BASED</Link></li>
+              <li><Link to="/school-based" className="text-dark text-lg hover:text-teal-500 hover:underline">SCHOOL BASED</Link></li>
+              <li><Link to="/parent-training" className="text-dark text-lg hover:text-teal-500 hover:underline">PARENT TRAINING</Link></li>
+              <li><Link to="/our-process" className="text-dark text-lg hover:text-teal-500 hover:underline">OUR PROCESS</Link></li>
+              <li><Link to="/contact" className="text-dark text-lg hover:text-teal-500 hover:underline">CONTACT</Link></li>
             </ul>
-            <Link to="/contact" className="ml-4 px-4 py-2 bg-highlight text-white rounded-full flex items-center hover:bg-teal transition duration-300">
+            <Link to="/contact" className="ml-4 px-4 py-2 bg-highlight text-white rounded-full flex items-center hover:bg-teal-600 transition duration-300">
               <i className="bi bi-check-circle-fill mr-2"></i>
               FREE CONSULTATION
             </Link>

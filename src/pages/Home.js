@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import IntakeFormSection from '../components/IntakeFormSection'; // Asegúrate de que esta ruta sea correcta
+import ContactForm from '../components/ContactForm'; // Asegúrate de que esta ruta sea correcta
 import WhatWeDoSection from '../components/WhatWeDoSection'; // Asegúrate de que esta ruta sea correcta
 import DisordersSection from '../components/DisordersSection'; // Asegúrate de que esta ruta sea correcta
 
@@ -84,7 +84,17 @@ const Home = () => {
 
       <DisordersSection />
 
-      <IntakeFormSection />
+      <section className="contact-form-section py-8 px-4" data-aos="fade-up">
+        <div className="container mx-auto">
+          <h2 className="text-2xl font-bold text-primary mb-4 text-center">
+            Please fill out the necessary form and a member of our Intake Team will contact you.
+            <br />
+            Thank you.
+          </h2>
+          
+          <ContactForm />
+        </div>
+      </section>
     </main>
   );
 };
