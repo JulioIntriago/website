@@ -8,14 +8,14 @@ const BenefitsSection = () => {
         <div className="flex flex-wrap justify-center items-center">
           <div className="w-full lg:w-1/2 p-4" data-aos="fade-right">
             <img
-              src="/img/imgdisorder.PNG" // Ajusta la ruta de la imagen según tu estructura
+              src="/img/betterhome.PNG" // Ajusta la ruta de la imagen según tu estructura
               alt="Familiar Environment"
               className="w-full h-auto rounded-lg shadow-md"
             />
           </div>
           <div className="w-full lg:w-1/2 p-4 text-center lg:text-left" data-aos="fade-left">
-            <h3 className="text-2xl font-bold text-secondary mb-4">Familiar Environment</h3>
-            <p className="text-secondary mb-4">
+          <h3 className="text-2xl font-bold text-primary mb-4">Familiar Environment</h3>
+          <p className="text-secondary mb-4">
               Perhaps the most valuable part of home-based ABA therapy is how comfortable your child will be with autism treatment right from the get-go. While we ensure your child is perfectly comfortable and secure in our center, there’s nothing like being in the comfort of your own home.
             </p>
             <p className="text-secondary mb-4">

@@ -16,7 +16,7 @@ const Individualize = () => {
                     />
                 </div>
                 <div className="w-full md:w-1/2 px-4">
-                    <h2 className="text-2xl font-bold mb-4 text-center md:text-left">Individualized Attention</h2>
+                    <h2 className="text-2xl text-primary font-bold mb-4 text-center md:text-left">Individualized Attention</h2>
                     <p className="mb-4">
                         Within the school setting, ABA therapists offer targeted support to enhance academic performance,
                         develop social skills, and address problem behaviors. They work closely with your child, tailoring
