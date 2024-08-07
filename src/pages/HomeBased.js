@@ -6,7 +6,6 @@ import DisordersSection from '../components/DisordersSection';
 import BenefitsSection from '../components/BenefitsSection';
 import ConvenienceSection from '../components/ConvenienceSection';
 import PairingSection from '../components/PairingSection';
-import IndividualizedAttentionSection from '../components/IndividualizedAttentionSection';
 
 const HomeBased = () => {
   return (
