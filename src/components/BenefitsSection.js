@@ -8,7 +8,7 @@ const BenefitsSection = () => {
         <div className="flex flex-wrap justify-center items-center">
           <div className="w-full lg:w-1/2 p-4" data-aos="fade-right">
             <img
-              src="/img/img2.png" // Ajusta la ruta de la imagen según tu estructura
+              src="/img/imgdisorder.PNG" // Ajusta la ruta de la imagen según tu estructura
               alt="Familiar Environment"
               className="w-full h-auto rounded-lg shadow-md"
             />

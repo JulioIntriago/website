@@ -5,6 +5,8 @@ import WhatWeDoSection from '../components/WhatWeDoSection'; // Asegúrate de qu
 import DisordersSection from '../components/DisordersSection'; // Asegúrate de que esta ruta sea correcta
 import BenefitsSection from '../components/BenefitsSection'; // Asegúrate de que esta ruta sea correcta
 import ConvenienceSection from '../components/ConvenienceSection'; // Asegúrate de que esta ruta sea correcta
+import PairingSection from '../components/PairingSection'; // Ajusta la ruta según sea necesario
+import IndividualizedAttentionSection from '../components/IndividualizedAttentionSection'; // Ajusta la ruta según sea necesario
 
 const HomeBased = () => {
   return (
@@ -25,8 +27,7 @@ const HomeBased = () => {
 
       <BenefitsSection />
       <ConvenienceSection />
-      <WhatWeDoSection />
-      <DisordersSection />
+      <PairingSection/>
 
       <section className="contact-form-section py-8 px-4" data-aos="fade-up">
         <div className="container mx-auto">
