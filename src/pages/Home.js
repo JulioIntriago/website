@@ -16,10 +16,7 @@ const Home = () => {
           loop
           src="/img/video.mp4" // Ruta al video en la carpeta img
         ></video>
-        <div className="overlay-text absolute inset-0 flex flex-col justify-center items-center text-white text-center">
-          <h1 className="text-6xl font-bold mb-5 text-primary">The Best</h1>
-          <h2 className="text-5xl text-primary">Therapy Services</h2>
-        </div>
+        
       </section>
 
       <section className="why-choose-section py-8 px-4" data-aos="fade-up">
