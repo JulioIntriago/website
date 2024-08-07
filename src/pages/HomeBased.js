@@ -1,12 +1,12 @@
 import React from 'react';
-import '../styles.css'; // Asegúrate de que esta ruta sea correcta
-import ContactForm from '../components/ContactForm'; // Asegúrate de que esta ruta sea correcta
-import WhatWeDoSection from '../components/WhatWeDoSection'; // Asegúrate de que esta ruta sea correcta
-import DisordersSection from '../components/DisordersSection'; // Asegúrate de que esta ruta sea correcta
-import BenefitsSection from '../components/BenefitsSection'; // Asegúrate de que esta ruta sea correcta
-import ConvenienceSection from '../components/ConvenienceSection'; // Asegúrate de que esta ruta sea correcta
-import PairingSection from '../components/PairingSection'; // Ajusta la ruta según sea necesario
-import IndividualizedAttentionSection from '../components/IndividualizedAttentionSection'; // Ajusta la ruta según sea necesario
+import '../styles.css';
+import ContactForm from '../components/ContactForm';
+import WhatWeDoSection from '../components/WhatWeDoSection';
+import DisordersSection from '../components/DisordersSection';
+import BenefitsSection from '../components/BenefitsSection';
+import ConvenienceSection from '../components/ConvenienceSection';
+import PairingSection from '../components/PairingSection';
+import IndividualizedAttentionSection from '../components/IndividualizedAttentionSection';
 
 const HomeBased = () => {
   return (
@@ -18,7 +18,7 @@ const HomeBased = () => {
           muted
           playsInline
           loop
-          src="/img/video.mp4" // Ruta al video en la carpeta img
+          src="/img/video.mp4"
         ></video>
         <div className="overlay-text absolute inset-0 flex flex-col justify-center items-center text-white text-center">
           {/* Puedes agregar aquí cualquier texto superpuesto al video */}
@@ -27,7 +27,8 @@ const HomeBased = () => {
 
       <BenefitsSection />
       <ConvenienceSection />
-      <PairingSection/>
+      <PairingSection />
+    
 
       <section className="contact-form-section py-8 px-4" data-aos="fade-up">
         <div className="container mx-auto">
