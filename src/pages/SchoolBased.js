@@ -34,8 +34,8 @@ const SchoolBased = () => {
 
       <PairingSection />
       <br></br>
-      <p className="text-4xl font-bold text-primary mb-2 text-center">Please fill out the necessary form and a member of our Intake Team will contact you.
-      Thank you.</p>
+      <p className="text-3xl font-bold text-primary mb-2 text-center">Please fill out the necessary form and a member of our Intake Team will contact you.</p>
+     <p className="text-4xl font-bold text-primary mb-2 text-center"> Thank you.</p>
       <ContactForm />
     <br></br>
       <Footer /> {/* Añadir el Footer aquí */}
