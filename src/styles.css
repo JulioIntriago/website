@@ -5,7 +5,7 @@
     --color-secondary: #3182ce;
     --color-highlight: #FFA3A3;
     --color-dark: #333333;
-    --color-light: #ffffff;
+    --color-light: hsl(0, 0%, 90%);
 }
 
 /* Estilos generales */
@@ -74,3 +74,75 @@ body {
       width: 100%;
   }
 }
+/* src/styles.css */
+
+/* Estilos generales para el navbar */
+nav {
+    background-color: var(--color-light);
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    transition: top 0.3s;
+    display: flex;
+    justify-content: center; /* Centrar el contenido del navbar */
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Ajusta el ancho máximo del contenedor */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem; /* Espacio entre los elementos del navbar */
+}
+
+nav ul li a {
+    color: var(--color-dark);
+    text-decoration: none; /* Evita el subrayado */
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: var(--color-secondary);
+    text-decoration: none; /* Evita el subrayado en hover */
+}
+
+nav .btn-free-consultation {
+    background-color: var(--color-primary); /* Color de fondo del botón */
+    color: var(--color-light); /* Color del texto */
+    padding: 0.5rem 1rem;
+    border-radius: 9999px; /* Bordes redondeados */
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+nav .btn-free-consultation:hover {
+    background-color: var(--color-highlight); /* Color de fondo en hover */
+    color: var(--color-dark); /* Color del texto en hover */
+}
+
+/* Responsivo */
+@media (min-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+}
+
+
+/* Responsivo */
+@media (min-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+}
+
