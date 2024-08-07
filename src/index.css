@@ -225,3 +225,76 @@ nav .hover\:bg-pink-600:hover {
     display: flex;
   }
 }
+/* styles.css */
+.school-based-aba {
+  background-color: #f8f8f8; /* Fondo general de la sección */
+}
+
+.school-based-aba .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.school-based-aba h2 {
+  color: #2d3748; /* Color del texto del título */
+}
+
+.school-based-aba .bg-green-200 {
+  background-color: #c6f6d5; /* Color de fondo de los bloques de texto */
+}
+
+.school-based-aba .p-6 {
+  padding: 1.5rem; /* Espaciado interno de los bloques */
+}
+
+.school-based-aba .rounded-lg {
+  border-radius: 0.5rem; /* Esquinas redondeadas */
+}
+
+.school-based-aba .shadow-md {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra de los bloques */
+}
+
+.school-based-aba p {
+  font-size: 1rem; /* Tamaño del texto */
+  color: #4a5568; /* Color del texto */
+}
+/* styles.css */
+.navbar {
+  height: 60px; /* Ajusta esto según la altura de tu navbar */
+}
+
+.school-based-aba {
+  margin-top: 60px; /* Debe ser igual a la altura de tu navbar */
+  background-color: #f8f8f8; /* Fondo general de la sección */
+}
+
+.school-based-aba .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.school-based-aba h2 {
+  color: #2d3748; /* Color del texto del título */
+}
+
+.school-based-aba .bg-green-200 {
+  background-color: #c6f6d5; /* Color de fondo de los bloques de texto */
+}
+
+.school-based-aba .p-6 {
+  padding: 1.5rem; /* Espaciado interno de los bloques */
+}
+
+.school-based-aba .rounded-lg {
+  border-radius: 0.5rem; /* Esquinas redondeadas */
+}
+
+.school-based-aba .shadow-md {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra de los bloques */
+}
+
+.school-based-aba p {
+  font-size: 1rem; /* Tamaño del texto */
+  color: #4a5568; /* Color del texto */
+}

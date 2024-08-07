@@ -1,19 +1,14 @@
 import React from 'react';
+import '../styles.css'; // Asegúrate de que esta ruta sea correcta
+import ContactForm from '../components/ContactForm'; // Asegúrate de que esta ruta sea correcta
+import WhatWeDoSection from '../components/WhatWeDoSection'; // Asegúrate de que esta ruta sea correcta
+import DisordersSection from '../components/DisordersSection'; // Asegúrate de que esta ruta sea correcta
+import BenefitsSection from '../components/BenefitsSection'; // Asegúrate de que esta ruta sea correcta
 
 const HomeBased = () => {
   return (
     <main className="pt-16">
-      {/* SVG de la ola para el clip-path */}
-      <svg width="0" height="0">
-  <defs>
-    <clipPath id="wave-small" clipPathUnits="objectBoundingBox">
-      <path d="M0,0.8 C0.2,0.9 0.4,0.7 0.5,0.7 C0.6,0.7 0.8,0.9 1,0.8 V1 H0 Z" />
-    </clipPath>
-  </defs>
-</svg>
-
-
-<section className="video-container relative h-screen">
+      <section className="video-container relative h-screen">
         <video
           className="background-video-hosted absolute w-full h-full object-cover"
           autoPlay
@@ -25,6 +20,21 @@ const HomeBased = () => {
         <div className="overlay-text absolute inset-0 flex flex-col justify-center items-center text-white text-center">
           <h1 className="text-6xl font-bold mb-5 text-primary">The Best</h1>
           <h2 className="text-5xl text-primary">Therapy Services</h2>
+        </div>
+      </section>
+
+      <BenefitsSection />
+
+      <WhatWeDoSection />
+      <DisordersSection />
+      <section className="contact-form-section py-8 px-4" data-aos="fade-up">
+        <div className="container mx-auto">
+          <h2 className="text-2xl font-bold mb-4 text-center">
+            Please fill out the necessary form and a member of our Intake Team will contact you.
+            <br />
+            Thank you.
+          </h2>
+          <ContactForm />
         </div>
       </section>
     </main>
