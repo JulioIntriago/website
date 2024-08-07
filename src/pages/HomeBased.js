@@ -6,7 +6,9 @@ import DisordersSection from '../components/DisordersSection';
 import BenefitsSection from '../components/BenefitsSection';
 import ConvenienceSection from '../components/ConvenienceSection';
 import PairingSection from '../components/PairingSection';
-import Individualize from '../components/Individualize'; // Asegúrate de importar el componente
+import Individualize from '../components/Individualize';
+import SkillAcquisition from '../components/SkillAcquisition';
+import NaturalEnvironmentTeaching from '../components/NaturalEnvironmentTeaching';
 
 const HomeBased = () => {
   return (
@@ -28,7 +30,9 @@ const HomeBased = () => {
       <BenefitsSection />
       <ConvenienceSection />
       <PairingSection />
-      <Individualize /> {/* Usa el componente aquí */}
+      <Individualize />
+      <SkillAcquisition />
+      <NaturalEnvironmentTeaching />
 
       <section className="contact-form-section py-8 px-4" data-aos="fade-up">
         <div className="container mx-auto">

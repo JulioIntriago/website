@@ -298,3 +298,59 @@ nav .hover\:bg-pink-600:hover {
   font-size: 1rem; /* Tamaño del texto */
   color: #4a5568; /* Color del texto */
 }
+/* Sección Natural Environment Teaching */
+.natural-environment-teaching-section {
+  padding: 40px 0;
+  background-color: #f9f9f9; /* Ajusta el color de fondo según tus necesidades */
+}
+
+.natural-environment-teaching-section h2 {
+  font-size: 2rem;
+  color: var(--color-dark); /* Ajusta el color del texto según tus necesidades */
+  margin-bottom: 20px;
+  text-align: left; /* Alinea el título a la izquierda */
+}
+
+.natural-environment-teaching-section p {
+  font-size: 1rem;
+  color: #555; /* Ajusta el color del texto según tus necesidades */
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify; /* Justifica el texto */
+}
+
+.natural-environment-teaching-section img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.natural-environment-teaching-section .container {
+  max-width: 1200px; /* Aumenta el ancho máximo del contenedor */
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.natural-environment-teaching-section .w-full {
+  width: 100%;
+}
+
+.natural-environment-teaching-section .md\:w-1\/2 {
+  width: 50%;
+}
+
+.natural-environment-teaching-section .px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.natural-environment-teaching-section .mb-8 {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .natural-environment-teaching-section .md\:w-1\/2 {
+      width: 100%;
+  }
+}
