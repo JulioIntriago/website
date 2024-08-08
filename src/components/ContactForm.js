@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 const ContactForm = () => {
+  // Define el estado inicial del formulario
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -18,6 +19,7 @@ const ContactForm = () => {
     otherDiagnosis: '',
   });
 
+  // Maneja el cambio de los valores del formulario
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData((prevState) => ({
@@ -26,31 +28,21 @@ const ContactForm = () => {
     }));
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await fetch('https://example.com/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-      if (response.ok) {
-        // Manejar la respuesta en caso de éxito
-        alert('Form submitted successfully!');
-      } else {
-        // Manejar errores
-        alert('Failed to submit the form.');
-      }
-    } catch (error) {
-      // Manejar errores de red
-      alert('An error occurred while submitting the form.');
-    }
-  };
-
   return (
-    <form id="contact-form" onSubmit={handleSubmit} className="w-full max-w-lg mx-auto bg-white p-8 rounded shadow-md">
+    // El atributo action especifica la URL de destino de FormSubmit.co
+    // El método POST se utiliza para enviar los datos del formulario
+    <form
+      action="https://formsubmit.co/your-email@example.com"
+      method="POST"
+      className="w-full max-w-lg mx-auto bg-white p-8 rounded shadow-md"
+    >
+      {/* Desactiva el captcha de FormSubmit.co */}
+      <input type="hidden" name="_captcha" value="false" />
+      {/* Redirige al usuario a una página de agradecimiento después de enviar el formulario */}
+      <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you" />
+      {/* Establece el asunto del correo electrónico */}
+      <input type="hidden" name="_subject" value="New submission from Contact Form" />
+      
       <h2 className="text-xl font-bold mb-4">Your Information</h2>
       <div className="mb-4">
         <input
@@ -85,6 +77,7 @@ const ContactForm = () => {
           required
         />
       </div>
+      
       <h3 className="text-lg font-bold mb-2">Preferred contact method</h3>
       <div className="mb-4">
         <label>
@@ -132,6 +125,7 @@ const ContactForm = () => {
           WhatsApp
         </label>
       </div>
+      
       <h2 className="text-xl font-bold mb-4">Your Location</h2>
       <div className="mb-4">
         <input
@@ -166,6 +160,7 @@ const ContactForm = () => {
           required
         />
       </div>
+      
       <h2 className="text-xl font-bold mb-4">Child Information</h2>
       <div className="mb-4">
         <input
@@ -225,6 +220,7 @@ const ContactForm = () => {
           required
         />
       </div>
+      
       <h2 className="text-xl font-bold mb-4">Autism Assessment</h2>
       <h3 className="text-lg font-bold mb-2">Does your child have an autism diagnosis?</h3>
       <div className="mb-4">
@@ -295,6 +291,7 @@ const ContactForm = () => {
         </button>
       </div>
     </form>
+    
   );
 };
 

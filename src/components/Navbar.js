@@ -80,10 +80,7 @@ const Navbar = () => {
               <li><Link to="/our-process" className="text-dark hover:text-teal-500">OUR PROCESS</Link></li>
               <li><Link to="/contact" className="text-dark hover:text-teal-500">CONTACT</Link></li>
             </ul>
-            <Link to="/contact" className="ml-4 px-4 py-2 bg-teal-500 text-white rounded-full flex items-center hover:bg-teal-600 transition duration-300 text-sm md:text-base btn-free-consultation">
-              <i className="bi bi-check-circle-fill mr-2"></i>
-              FREE <br></br>CONSULTATION
-            </Link>
+            
           </div>
         </div>
       </nav>
